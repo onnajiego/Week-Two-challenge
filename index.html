@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav class="header">
+      <h1>Onyeka Nnajiego</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#About-Me"> About Me</a>
+          </li>
+          <li>
+            <a href="#Work"> Work</a>
+          </li>
+          <li>
+            <a href="#Contact-Me"> Contact Me </a>
+          </li>
+          <li>
+            <a href="./assets/images/nnajiego-onyeka-resume-2022.docx" download>
+              Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <div id="parent"></div>
+    <div class="hero"></div>
+    <article>
+      <div id="about-me" class="about-me-wrapper">
+        <div class="about-me-grid-container">
+          <div class="about-me-item about-me-title">
+            <h1>About me</h1>
+          </div>
+          <div class="about-me-item p1">
+            <p>
+              Achieving goals together means spending time doing what we love
+              with people we care about. My goal is to do what I love with
+              professionalism that will benefit us both in any future endeavors
+              we work on.
+            </p>
+          </div>
+          <div class="about-me-item p2">
+            <p>
+              I am currently working as an assistant Project Manager at Alpha
+              Testing Inc. My job entails making sure that our production
+              environment runs smoothly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div id="work" class="work-wrapper">
+        <div class="work-grid-container">
+          <div class="work-item work-title">
+            <p>Work</p>
+          </div>
+          <div
+            onclick="projectClicked('challenge-1-refactor')"
+            title="Horiseon landing Page"
+            style="cursor: pointer"
+            class="work-item-project challenge-1-refactor"
+          >
+            <div class="div-background">
+              <h3>Horiseon Services</h3>
+              <div class="lower-text">HTML/CSS</div>
+            </div>
+          </div>
+          <div
+            onclick="projectClicked('password-generator')"
+            title="Password Generator landing page"
+            style="cursor: pointer"
+            class="work-item-project password-generator"
+          >
+            <div class="div-background">
+              <h3>Password Generator</h3>
+              <div class="lower-text">CSS/Javascript</div>
+            </div>
+          </div>
+          <div
+            onclick="projectClicked('run-buddy')"
+            title="RUN BUDDY landing page"
+            style="cursor: pointer"
+            class="work-item-project run-buddy"
+          >
+            <div class="div-background">
+              <h3>Run Buddy</h3>
+              <div class="lower-text">HTML/CSS</div>
+            </div>
+          </div>
+
+          <div
+            onclick="projectClicked('web-api-code-quiz')"
+            title="Web Api Code Quiz landing page"
+            style="cursor: pointer"
+            class="work-item-project web-api-code-quiz"
+          >
+            <div class="div-background">
+              <h3>Web API Code Quiz</h3>
+              <div class="lower-text">Javascript/CSS/LocalStorage</div>
+            </div>
+          </div>
+          <div
+            onclick="projectClicked('work-day-scheduler')"
+            title="Web Api Code Quiz landing page"
+            style="cursor: pointer"
+            class="work-item-project work-day-scheduler"
+          >
+            <div class="div-background">
+              <h3>Work Day Scheduler</h3>
+              <div class="lower-text">Dynamic Javascript/Bootstrap</div>
+            </div>
+          </div>
+          <div
+            onclick="projectClicked('Project02-week01')"
+            title="Project02-week01 landing page"
+            style="cursor: pointer"
+            class="work-item-project project02-week01"
+          >
+            <div class="div-background">
+              <h3>Project 2 week 1</h3>
+              <div class="lower-text">ORM/SQL/MVC</div>
+            </div>
+          </div>
+
+          <div class="work-item-project ghost-item">
+            <div class="div-background">
+              <h2>Coming soon!</h2>
+              <div class="lower-text">TBD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div id="contact-me" class="footer-wrapper">
+        <div class="footer-container">
+          <div class="footer-grid-item contact-me">Contact Me</div>
+          <div class="footer-grid-item phone">
+            <a href="tel:416-629-5644" class="nav-effects">416-629-5644 </a>
+          </div>
+          <div class="footer-grid-item email">
+            <a href="mailto:nnajiegoonyeka@gmail.com"
+              >nnajiegoonyeka@gmail.com</a
+            >
+          </div>
+          <div class="footer-grid-item git-hub">
+            <a href="https://github.com/onnajiego/" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function projectClicked(input) {
+        var input = input;
+        if (input == "challenge-1-refactor") {
+          window.open("https://onnajiego.github.io/Week-one-Challenge/");
+        } else if (input == "password-generator") {
+          window.open("https://onnajiego.github.io/Week-one-Challenge/");
+        } else if (input == "web-api-code-quiz") {
+          window.open("https://onnajiego.github.io/Week-one-Challenge/");
+        } else if (input == "work-day-scheduler") {
+          window.open("https://onnajiego.github.io/Week-one-Challenge/");
+        } else if (input == "project02-week01") {
+          window.open("https://onnajiego.github.io/Week-one-Challenge/");
+        } else if (input == "run-buddy") {
+          window.open("https://onnajiego.github.io/Week-one-Challenge/");
+        } else {
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>
