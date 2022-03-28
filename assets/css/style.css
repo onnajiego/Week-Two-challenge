@@ -251,10 +251,10 @@ a {
   text-align: left;
 }
 
-.work-item-project.run-buddy {
+.work-item-project.booze {
   grid-column: 3 / span 1;
   grid-row: 7 / span 3;
-  background-image: url("../images/buddy.jpg");
+  background-image: url("../images/days.JPG");
   background-size: cover;
   display: flex;
   align-items: flex-end;
